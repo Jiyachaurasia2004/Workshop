@@ -114,13 +114,15 @@ export default function HeroSection() {
 
                   <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug mb-6">
                     Java Full Stack Development <br />
-                    <span className="text-primary">Workshop SPARK Batch 3.0</span>
+                    <span className="text-primary">
+                      Workshop SPARK Batch 3.0
+                    </span>
                   </h1>
 
                   <p className="text-gray-600 text-base sm:text-md mb-6 leading-relaxed">
-                    Learn Frontend, Backend & Database development with real-time
-                    projects, expert mentors, and a clear roadmap to become a
-                    job-ready Java Full Stack Developer.
+                    Learn Frontend, Backend & Database development with
+                    real-time projects, expert mentors, and a clear roadmap to
+                    become a job-ready Java Full Stack Developer.
                   </p>
 
                   <ul className="space-y-2 mb-8 text-gray-700 text-sm lg:text-base text-start lg:text-start">
@@ -194,7 +196,9 @@ export default function HeroSection() {
                 <div className="text-center lg:text-left mt-8 md:mt-12">
                   <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold text-gray-900 leading-snug mb-4">
                     {slides[current].title}
-                    <span className="text-primary">{slides[current].highlight}</span>
+                    <span className="text-primary">
+                      {slides[current].highlight}
+                    </span>
                   </h2>
                   <p className="text-gray-600  text-base sm:text-lg mb-6 leading-relaxed">
                     {slides[current].desc}
@@ -216,18 +220,26 @@ export default function HeroSection() {
                 </div>
 
                 {/* RIGHT: Image */}
-                <div className="flex justify-center lg:justify-end items-center">
+                <div className="flex  justify-center lg:justify-end items-center border-blue-500">
                   <img
                     src={slides[current].image}
                     alt={slides[current].title}
-                    className="w-full max-w-lg lg:max-w-xl rounded-lg shadow-md"
+                    className="
+    w-full max-w-lg lg:max-w-xl
+    rounded-lg
+    shadow-md
+    border-2 border-blue-500
+    transition-all duration-300 ease-in-out
+    hover:scale-105
+    hover:shadow-xl
+    hover:border-blue-600
+  "
                   />
                 </div>
               </motion.div>
             )}
           </AnimatePresence>
         </div>
-
       </div>
     </div>
   );
