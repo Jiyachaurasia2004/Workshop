@@ -77,7 +77,7 @@ export default function HeroSection() {
     setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <div className="relative  h-screen overflow-hidden bg-white pt-28 md:pt-50 pb-16 sm:pb-20 lg:pb-24">
+    <div className="relative  min-h-screen overflow-hidden bg-white pt-20 md:pt-32 pb-16 sm:pb-20 lg:pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex flex-col justify-center">
         {/* Slider Arrows */}
         <div className="absolute inset-y-0 left-0 right-0 flex items-center justify-between pointer-events-none z-20">
