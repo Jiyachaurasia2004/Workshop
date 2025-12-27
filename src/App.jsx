@@ -19,7 +19,6 @@ function App() {
         <Hero />
         <Countdown />
         <DetailsGrid />
-        <LearningOutcomes />
         <ProjectShowcase />
         <Curriculum />
         <Bonuses />
